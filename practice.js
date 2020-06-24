@@ -350,22 +350,27 @@
 
 
 
-// 10. Write a function that takes in an array of words and returns the number of times the letter “a” appeared in total.
-function aCount(words) {
-  var count = 0;
-  var arrIndex = 0;
-  while (arrIndex < words.length) {
-    var word = words[arrIndex];
-    var strIndex = 0;
-    while (strIndex < word.length) {
-      if (word[strIndex] === "a") {
-        count++;
-      }
-      strIndex++;
-    }
-    arrIndex++;
-  }
-  return count;
-}
+// // 10. Write a function that takes in an array of words and returns the number of times the letter “a” appeared in total.
+// function aCount(words) {
+//   var count = 0;
+//   var arrIndex = 0;
+//   while (arrIndex < words.length) {
+//     var word = words[arrIndex];
+//     var strIndex = 0;
+//     while (strIndex < word.length) {
+//       if (word[strIndex] === "a") {
+//         count++;
+//       }
+//       strIndex++;
+//     }
+//     arrIndex++;
+//   }
+//   return count;
+// }
 
-console.log(aCount(["apple", "orange", "banana"]));
+// console.log(aCount(["apple", "orange", "banana"]));
+
+var fruits = ["apple", "orange", "banana"];
+for (var fruit of fruits) {
+  console.log(fruit);
+}
