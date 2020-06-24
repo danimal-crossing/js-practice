@@ -176,3 +176,118 @@
 // }
 
 // printSums([1, 5, 10], [100, 500, 1000]);
+
+// function selectEvenItems(strings) {
+//   var result = [];
+//   var index = 0;
+//   strings.forEach(function (string) {
+//     if (index % 2 === 0) {
+//       result.push(string);
+//     }
+//     index++;
+//   });
+//   return result;
+// }
+
+// console.log(selectEvenItems(["a", "b", "c", "d", "e", "f"]));
+
+
+// function max(numbers) {
+//   var currentMax = numbers[0];
+//   numbers.forEach(function (number) {
+//     if (number > currentMax) {
+//       currentMax = number;
+//     }
+//   });
+//   return currentMax;
+// }
+
+// console.log(max([5, 4, 8, 1, 2]));
+
+// function descending(numbers) {
+//   var result = [];
+//   for (var i = numbers.length - 1; i >= 0; i--) {
+//     result.push(numbers[i]);
+//   }
+//   return result;
+// }
+
+// console.log(descending([1, 3, 5, 7]));
+
+
+// // 1. Write a function that takes in an array of numbers and returns its sum.
+
+// function sum(numbers) {
+//   var result = 0;
+//   var index = 0;
+//   while (index < numbers.length) {
+//     result += numbers[index];
+//     index++;
+//   }
+//   return result;
+// }
+// console.log(sum([1, 2, 3]));
+
+
+// // 2. Write a function that takes in an array of strings and returns the smallest string.
+// function smallestString(strings) {
+//   var result = strings[0];
+//   var index = 0;
+//   while (index < strings.length) {
+//     if (strings[index].length < result.length) {
+//       result = strings[index];
+//     }
+//     index++;
+//   }
+//   return result;
+// }
+
+// console.log(smallestString(["apple", "orange", "banana", "kiwi"]));
+
+
+
+// // 3. Write a function that takes in an array of numbers and returns a new array with the numbers in reverse order.
+// function reversedNums(numbers) {
+//   var result = [];
+//   var index = numbers.length - 1;
+//   while (index >= 0) {
+//     result.push(numbers[index]);
+//     index--;
+//   }
+//   return result;
+// }
+
+// console.log(reversedNums([1, 2, 4]));
+
+
+// // 4. Write a function that takes in an array of words and returns the number of words that begin with the letter “a”.
+// function aWords(words) {
+//   var count = 0;
+//   words.forEach(function (word) {
+//     if (word[0].toLowerCase() === "a") {
+//       count++;
+//     }
+//   });
+//   return count;
+// }
+
+// console.log(aWords(["apple", "orange", "banana", "A pear"]));
+
+// // 5. Write a function that takes in an array of strings and joins them together to make a single string separated by commas.
+// function smashWithCommas(strings) {
+//   var result = "";
+//   strings.forEach(function (string) {
+//     result += string + ",";
+//   });
+//   return result.slice(0, -1);
+// }
+
+// console.log(smashWithCommas(["apple", "orange", "banana", "kiwi"]));
+
+
+
+// 6. Write a function that takes in an array of numbers and returns the product of all the numbers (each number multiplied by each other). 
+// 7. Write a function that takes in an array of numbers and returns the two smallest numbers.
+// 8. Write a function that takes in an array of numbers and returns a count of how many zeros are in the array.
+// 9. Write a function that takes in an array of numbers and returns true if all the numbers are bigger than 10, otherwise returns false.
+// 10. Write a function that takes in an array of words and returns the number of times the letter “a” appeared in total.
