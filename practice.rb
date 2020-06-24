@@ -294,7 +294,7 @@
 #   [smallest, second_smallest]
 # end
 
-# p two_smallest_numbers([4, 7, 3, 6, 9, 10])
+# p two_smallest_numbers([3, 4, 7, 6, 9, 10])
 
 
 # # 8. Write a function that takes in an array of numbers and returns a count of how many zeros are in the array.

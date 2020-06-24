@@ -284,10 +284,88 @@
 
 // console.log(smashWithCommas(["apple", "orange", "banana", "kiwi"]));
 
+// // 6. Write a function that takes in an array of numbers and returns the product of all the numbers (each number multiplied by each other). 
+// function multiply(numbers) {
+//   var product = 1;
+//   numbers.forEach(function (num) {
+//     product *= num;
+//   });
+//   return product;
+// }
+
+// console.log(multiply([2, 3, 5, 1]));
+
+// // 7. Write a function that takes in an array of numbers and returns the two smallest numbers.
+// function twoSmallestNumbers(numbers) {
+//   var smallestIndex = 0;
+//   var smallest = numbers[smallestIndex];
+//   var index = 0;
+//   while (index < numbers.length) {
+//     if (numbers[index] < smallest) {
+//       smallest = numbers[index];
+//       smallestIndex = index;
+//     }
+//     index++;
+//   }
+//   var secondSmallest = numbers[smallestIndex - 1];
+//   index = 0;
+//   while (index < numbers.length) {
+//     if (numbers[index] < secondSmallest && index !== smallestIndex) {
+//       secondSmallest = numbers[index];
+//     }
+//     index++;
+//   }
+//   return [smallest, secondSmallest];
+// }
+
+// console.log(twoSmallestNumbers([3, 4, 7, 6, 9, 10]));
+
+// // 8. Write a function that takes in an array of numbers and returns a count of how many zeros are in the array.
+// function zeroCount(numbers) {
+//   var count = 0;
+//   numbers.forEach(function (num) {
+//     if (num === 0) {
+//       count++;
+//     }
+//   });
+//   return count;
+// }
+
+// console.log(zeroCount([9, 32, 0, 2, 0, 12, 5, 2, 0, 1]));
 
 
-// 6. Write a function that takes in an array of numbers and returns the product of all the numbers (each number multiplied by each other). 
-// 7. Write a function that takes in an array of numbers and returns the two smallest numbers.
-// 8. Write a function that takes in an array of numbers and returns a count of how many zeros are in the array.
-// 9. Write a function that takes in an array of numbers and returns true if all the numbers are bigger than 10, otherwise returns false.
+
+// // 9. Write a function that takes in an array of numbers and returns true if all the numbers are bigger than 10, otherwise returns false.
+// function allBig(numbers) {
+//   var result = true;
+//   numbers.forEach(function (num) {
+//     if (num <= 10) {
+//       result = false;
+//     }
+//   });
+//   return result;
+// }
+
+// console.log(allBig([11, 23, 35]));
+
+
+
 // 10. Write a function that takes in an array of words and returns the number of times the letter “a” appeared in total.
+function aCount(words) {
+  var count = 0;
+  var arrIndex = 0;
+  while (arrIndex < words.length) {
+    var word = words[arrIndex];
+    var strIndex = 0;
+    while (strIndex < word.length) {
+      if (word[strIndex] === "a") {
+        count++;
+      }
+      strIndex++;
+    }
+    arrIndex++;
+  }
+  return count;
+}
+
+console.log(aCount(["apple", "orange", "banana"]));
